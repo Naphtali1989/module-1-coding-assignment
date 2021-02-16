@@ -26,9 +26,8 @@
             return 'Please enter data first'
         }
         $scope.msgStyle = () => {
-            if ($scope.foodAmmount > 3) return { color: 'green' }
-            else if ($scope.foodAmmount > 0) return 'Enjoy!'
-            return ''
+            if ($scope.foodAmmount > 0) return { color: 'green', border: '1px solid green' }
+            return { color: 'red', border: '1px solid red' }
         }
 
 
