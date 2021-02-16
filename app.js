@@ -10,11 +10,6 @@
         $scope.food = '';
         $scope.foodAmmount = 0;
 
-        $scope.upper = () => {
-            var upCase = $filter('uppercase');
-            $scope.name = upCase($scope.name);
-        }
-
         $scope.checkFoodAmount = () => {
             const foods = $scope.food.split(',').filter(food => food)
             $scope.foodAmmount = foods.length
@@ -25,11 +20,11 @@
             else if ($scope.foodAmmount > 0) return 'Enjoy!'
             return 'Please enter data first'
         }
+
         $scope.msgStyle = () => {
             if ($scope.foodAmmount > 0) return { color: 'green', border: '1px solid green' }
             return { color: 'red', border: '1px solid red' }
         }
-
 
     }
 })();
