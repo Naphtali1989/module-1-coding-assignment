@@ -17,9 +17,12 @@
 
     <main ng-controller="FoodController">
         <form ng-submit="checkFoodAmount()">
+            <h3>Enter your favorite foods (Separate them with a comma, please and thank you.): </h3>
             <input type="text" ng-model="food">
+            <!-- Not considering empty items as empty in my function -->
             <input type="submit" value="Check If Too Much">
         </form>
+        {{showMsg()}}
     </main>
 </body>
 
