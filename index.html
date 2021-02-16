@@ -14,11 +14,12 @@
 
 <body>
     <h1>My first AngularJS proj</h1>
-    <main ng-controller="DIController">
-        <input type="text" ng-model="name" ng-blur="upper()">
-        <p>
-            {{name}}
-        </p>
+
+    <main ng-controller="FoodController">
+        <form ng-submit="checkFoodAmount()">
+            <input type="text" ng-model="food">
+            <input type="submit" value="Check If Too Much">
+        </form>
     </main>
 </body>
 

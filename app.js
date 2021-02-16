@@ -2,11 +2,11 @@
 
 (() => {
     angular.module('myFirstApp', [])
-        .controller('DIController', DIController);
+        .controller('FoodController', FoodController);
 
-    DIController.$inject = ['$scope', '$filter']
+    FoodController.$inject = ['$scope', '$filter']
 
-    function DIController($scope, $filter) {
+    function FoodController($scope, $filter) {
         $scope.name = 'Naphtali';
 
         $scope.upper = () => {
