@@ -11,7 +11,7 @@
         $scope.foodAmmount = 0;
 
         $scope.checkFoodAmount = () => {
-            const foods = $scope.food.split(',').filter(food => food)
+            const foods = $scope.food.split(',').filter(food => food.trim().length > 0)
             $scope.foodAmmount = foods.length
         }
 
